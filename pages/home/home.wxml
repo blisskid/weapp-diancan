@@ -25,26 +25,26 @@
   <!-- 食品列表 -->
   <view>
     <scroll-view style="height: 100%;" scroll-y="true">
-      <!-- <view class="fooditem-l">
-        <image mode="scaleToFill" src="https://fuss10.elemecdn.com/8/05/0b0f3719bf1c9c1673ed69e262888jpeg.jpeg" bindtap="imageClick"></image>
+       <!-- <view class="fooditem-l">
+        <image mode="scaleToFill" src="https://fuss10.elemecdn.com/8/05/0b0f3719bf1c9c1673ed69e262888jpeg.jpeg" data-index="0" bindtap="imageClick"></image>
         <view class="foodtitle">黑胡椒意酱面</view>
         <view class="fooditem-handle">
-          <span class="fooditem-jia" bindtap="addClick">+</span>
+          <span class="fooditem-jia" data-index="0" bindtap="addClick">+</span>
           <span class="fooditem-num">1</span>
-          <span class="fooditem-jia" bindtap="reduceClick">-</span>
+          <span class="fooditem-jia" data-index="0" bindtap="reduceClick">-</span>
           <span class="fooditem-cost">￥10</span>
         </view>
       </view>
       <view class="fooditem-r">
-        <image mode="scaleToFill" src="https://fuss10.elemecdn.com/8/05/0b0f3719bf1c9c1673ed69e262888jpeg.jpeg" bindtap="imageClick"></image>
+        <image mode="scaleToFill" src="https://fuss10.elemecdn.com/8/05/0b0f3719bf1c9c1673ed69e262888jpeg.jpeg" data-index="1" bindtap="imageClick"></image>
         <view class="foodtitle">黑胡椒意酱面</view>
         <view class="fooditem-handle">
-          <span class="fooditem-jia" bindtap="addClick">+</span>
+          <span class="fooditem-jia" data-index="1" bindtap="addClick">+</span>
           <span class="fooditem-num">1</span>
-          <span class="fooditem-jia" bindtap="reduceClick">-</span>
+          <span class="fooditem-jia" data-index="1" bindtap="reduceClick">-</span>
           <span class="fooditem-cost">￥10</span>
         </view>
-      </view> -->
+      </view>  -->
 
       <view class="fooditem" wx:for="{{foodList}}" wx:key="item.id">
 

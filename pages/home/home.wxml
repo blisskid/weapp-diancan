@@ -27,29 +27,6 @@
     <scroll-view style="height: 100%;" scroll-y="true">
 
       <view class="fooditem" wx:for="{{foodList}}" wx:key="item.id" wx:for-index="index" wx:for-item="item">
-<!--   
-        <view class="fooditem-l">
-          <image mode="scaleToFill" src="{{item[0].icon}}" data-index="{{index*2}}" bindtap="imageClick"></image>
-          <view class="foodtitle">{{item[0].title}}</view>
-          <view class="fooditem-handle">
-            <span class="fooditem-jia" data-index="{{index*2}}" bindtap="addClick">+</span>
-            <span class="fooditem-num">{{orderList[item[0].id].num ? orderList[item[0].id].num : 0}}</span>
-            <span class="fooditem-jia" data-index="{{index*2}}" bindtap="reduceClick">-</span>
-            <span class="fooditem-cost">￥{{item[0].cost}}</span>
-          </view>
-        </view>
-
-        <view class="fooditem-r">
-          <image mode="scaleToFill" src="{{item[1].icon}}" data-index="{{index*2 + 1}}" bindtap="imageClick"></image>
-          <view class="foodtitle">{{item[1].title}}</view>
-          <view class="fooditem-handle">
-            <span class="fooditem-jia" data-index="{{index*2 + 1}}" bindtap="addClick">+</span>
-            <span class="fooditem-num">{{orderList[item[1].id].num ? orderList[item[1].id].num : 0}}</span>
-            <span class="fooditem-jia" data-index="{{index*2 + 1}}" bindtap="reduceClick">-</span>
-            <span class="fooditem-cost">￥{{item[1].cost}}</span>
-          </view>
-        </view>
-         -->
 
         <view class="fooditem-l">
           <image mode="scaleToFill" src="{{item.icon}}" data-index="{{index}}" bindtap="imageClick"></image>

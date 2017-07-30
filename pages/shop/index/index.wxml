@@ -1,0 +1,167 @@
+<!-- 首页 -->
+<!-- 店招 -->
+<view class="hd">
+	<image class="logo" src="http://bmob-cdn-12529.b0.upaiyun.com/2017/06/27/50a8f08c4025912680dae83e0aa12a1a.png" />
+	<view class="banner">
+		<view class="seller">Dream网络香酥鸭</view>
+		<view class="notice">30年老店，有口皆碑</view>
+		<view class="business-time">营业时间 9:00 - 21:00</view>
+	</view>
+</view>
+<!-- 菜品 -->
+<view class="bd">
+	<!-- 菜品分类 -->
+	<view class="category-container">
+		<!-- 分类单品 -->
+		<view class="category-item category-item-active">
+			<!-- 标题 -->
+			<view class="category-content">特色菜</view>
+			<!-- 数量红点 -->
+			<view class="badge">3</view>
+		</view>
+		<view class="category-item">
+			<view class="category-content">套餐</view>
+			<view class="badge">5</view>
+		</view>
+		<view class="category-item">
+			<view class="category-content">单点</view>
+			<!-- <view class="badge">3</view> -->
+		</view>
+		<view class="category-item">
+			<view class="category-content">饮料酒水</view>
+			<view class="badge">1</view>
+		</view>
+	</view>
+	<!-- 菜品列表 -->
+	<view class="food-container">
+		<!-- 菜品单品 -->
+		<view class="food-item">
+			<!-- food list -->
+			<!-- 主图 -->
+			<view class="food-hd">
+				<image class="thumb" mode="aspectFill" src="http://bmob-cdn-12529.b0.upaiyun.com/2017/06/28/ed1511964098e4e480179757eb7799c5.png" />
+			</view>
+			<view class="food-bd">
+				<view class="title">香酥鸭</view>
+				<view class="summary">招牌菜</view>
+				<view class="price-stepper">
+					<view class="price">60.0</view>
+					<view class="stepper">
+						<!-- 减号 -->
+						<view class="symbol subtract">-</view>
+						<!-- 数量 -->
+						<view class="value">1</view>
+						<!-- 加号 -->
+						<view class="symbol add">+</view>
+
+					</view>
+				</view>
+			</view>
+		</view>
+		<!-- 菜品单品 -->
+		<view class="food-item">
+			<!-- 主图 -->
+			<view class="food-hd">
+				<image class="thumb" mode="aspectFill" src="http://bmob-cdn-12529.b0.upaiyun.com/2017/06/28/2f127dcf40a5c30180aae7b6e25a4524.png" />
+			</view>
+			<view class="food-bd">
+				<view class="title">时蔬</view>
+				<view class="summary">招牌菜</view>
+				<view class="price-stepper">
+					<view class="price">12.0</view>
+					<view class="stepper">
+						<!-- 减号 -->
+						<view class="symbol subtract">-</view>
+						<!-- 数量 -->
+						<view class="value">3</view>
+						<!-- 加号 -->
+						<view class="symbol add">+</view>
+
+					</view>
+				</view>
+			</view>
+		</view>
+		<!-- 菜品单品 -->
+		<view class="food-item">
+			<!-- 主图 -->
+			<view class="food-hd">
+				<image class="thumb" mode="aspectFill" src="http://bmob-cdn-12529.b0.upaiyun.com/2017/06/28/f7b79b2340a3d143801f79a78b08d3a0.png" />
+			</view>
+			<view class="food-bd">
+				<view class="title">笋干</view>
+				<view class="summary">招牌菜</view>
+				<view class="price-stepper">
+					<view class="price">18.0</view>
+					<view class="stepper">
+						<!-- 减号 -->
+						<!-- <view class="symbol subtract">-</view> -->
+						<!-- 数量 -->
+						<!-- <view class="value">1</view> -->
+						<!-- 加号 -->
+						<view class="symbol add">+</view>
+
+					</view>
+				</view>
+			</view>
+		</view>
+		<!-- 菜品单品 -->
+		<view class="food-item">
+			<!-- 主图 -->
+			<view class="food-hd">
+				<image class="thumb" mode="aspectFill" src="http://bmob-cdn-12529.b0.upaiyun.com/2017/06/28/560cd058407933f2801666359f394c44.png" />
+			</view>
+			<view class="food-bd">
+				<view class="title">鱼饼</view>
+				<view class="summary">招牌菜</view>
+				<view class="price-stepper">
+					<view class="price">22.0</view>
+					<view class="stepper">
+						<!-- 减号 -->
+						<view class="symbol subtract">-</view>
+						<!-- 数量 -->
+						<view class="value">1</view>
+						<!-- 加号 -->
+						<view class="symbol add">+</view>
+
+					</view>
+				</view>
+			</view>
+		</view>
+		<!-- 菜品单品 -->
+		<view class="food-item">
+			<!-- 主图 -->
+			<view class="food-hd">
+				<image class="thumb" mode="aspectFill" src="http://bmob-cdn-12529.b0.upaiyun.com/2017/06/28/ed1511964098e4e480179757eb7799c5.png" />
+			</view>
+			<view class="food-bd">
+				<view class="title">香酥鸭半只</view>
+				<view class="summary">招牌菜</view>
+				<view class="price-stepper">
+					<view class="price">32.0</view>
+					<view class="stepper">
+						<!-- 减号 -->
+						<view class="symbol subtract">-</view>
+						<!-- 数量 -->
+						<view class="value">1</view>
+						<!-- 加号 -->
+						<view class="symbol add">+</view>
+
+					</view>
+				</view>
+			</view>
+		</view>
+		<!-- ./ food list -->
+	</view>
+</view>
+<!-- 购物车 -->
+<view class="ft">
+	<view class="cart-container">
+		<image src="/images/cart.png" class="cart" />
+	</view>
+	<view class="fee">
+		<view class="food-fee">￥150</view>
+		<view class="express-fee">配送费￥3</view>
+	</view>
+	<view class="checkout" bindtap="checkout">去结算</view>
+	
+</view>

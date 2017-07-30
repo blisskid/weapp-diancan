@@ -1,0 +1,275 @@
+/*头部部分*/
+
+/*店招*/
+.hd {
+	background: #09f;
+	display: flex;
+	flex-direction: row;
+	padding: 10px 0 15px 0;
+}
+
+/*logo*/
+.logo {
+	width: 80px;
+	height: 80px;
+	border-radius: 3px;
+	margin: 0 10px;
+}
+
+/*店名与公告*/
+.banner {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+/*店名*/
+.seller {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/*公告*/
+.notice {
+	margin-top: 15px;
+	font-size: 12px;
+}
+
+/*营业时间*/
+.business-time {
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+
+/*主体部分*/
+
+/*分类与菜品*/
+.bd {
+	margin-top: 6px;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: row;
+}
+
+/*分类容器*/
+.category-container {
+	width: 30%;
+}
+
+/*分类项*/
+.category-item {
+	background: #f5f5f5;
+	height: 50px;
+	position: relative;
+	border-bottom: 1px solid #ededed;
+}
+
+/*分类文本*/
+.category-content {
+	line-height: 50px;
+	font-size: 14px;
+	color: #666;
+	padding-left: 10px;
+}
+
+/*分类文本高亮*/
+.category-item-active {
+	background: #fff;
+	display: flex;
+	flex-direction: row;
+}
+
+/*分类文本高亮左侧标识*/
+.category-item-active:before {
+	content: "";
+	width: 3px;
+	background: #0099ff;
+}
+
+/*红点*/ 
+.badge {
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #ff461d;
+	color: white;
+	padding: 2px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 14px;
+}
+
+/*菜品列表容器*/
+.food-container {
+	width: 70%;
+	/*box-sizing: border-box;*/
+	margin-left: 10px;
+}
+
+/*菜品列表*/
+.food-item {
+	display: flex;
+	flex-direction: row;
+	padding: 5px 0;
+	border-bottom: 1px solid #ededed;
+}
+
+/*主图容器*/
+.food-hd {
+	width: 25%;
+}
+
+/*主图*/
+.thumb {
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+	display: inline-table;
+}
+
+/*商品信息*/
+.food-bd {
+	width: 75%;
+	margin-left: 10px;
+}
+
+/*菜名*/
+.title {
+	font-weight: bold;
+	font-size: 16px;
+	padding: 4px 0;
+	color: #333;
+}
+
+/*简述*/
+.summary {
+	padding: 4px 0;
+	font-size: 12px;
+	color: #9e9e9e;
+
+}
+
+/*价格与数量加减器*/
+.price-stepper {
+	padding: 4px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/*价格*/
+.price {
+	flex: 1;
+	font-size: 18px;
+	color: #ff6000;
+}
+
+/*人民币符号*/
+.price:before {
+	content: "￥";
+	font-size: 14px;
+}
+
+/*加减器*/
+.stepper {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 5px;
+}
+
+/*+-号*/
+.symbol {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	text-align: center;
+	font-weight: bold;
+	margin: 0 8px;
+}
+
+/*减号*/
+.subtract {
+	border: 2px solid #09f;
+	color: #09f;
+	font-size: 16px;
+}
+
+/*加号*/
+.add {
+	width: 20px;
+	height: 20px;
+	background: #09f;
+	color: white;
+	line-height: 20px;
+	font-size: 20px;
+}
+
+/*数量*/
+.value {
+	font-size: 14px;
+}
+
+/*购物车模块*/
+.ft {
+	width: 100%;
+	height: 50px;
+	background: #474749;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex: row;
+}
+
+/*购物车容器*/
+.cart-container {
+	width: 20%;
+	position: relative;
+}
+
+/*购物车图标*/
+.cart {
+	position: absolute;
+	top: -8px;
+	left: 15px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 5px solid #4d4d4f;
+}
+
+/*费用*/
+.fee {
+	width: 50%;
+	color: white;
+}
+
+/*菜品小计*/
+.food-fee {
+	font-size: 18px;
+	margin: 7px;
+	margin-left: 4px;
+}
+
+/*配送费*/
+.express-fee {
+	font-size: 12px;
+	margin: 4px;
+}
+
+/*结算按钮*/
+.checkout {
+	width: 30%;
+	background: #38ca73;
+	color: white;
+	line-height: 50px;
+	text-align: center;
+}

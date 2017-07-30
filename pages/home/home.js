@@ -101,7 +101,7 @@ Page({
   onLoad: function (options) {
 
     //全局数据中获得食品列表
-    var appInstance = getApp();
+    // var appInstance = getApp();
     // var t_foodList = appInstance.globalData.foodList;
 
     // var t_arr;

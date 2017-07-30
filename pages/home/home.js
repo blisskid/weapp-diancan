@@ -98,8 +98,8 @@ Page({
   },
 
   // 页面初始化 options为页面跳转所带来的参数
-  onLoad:function(options){
-    
+  onLoad: function (options) {
+
     //全局数据中获得食品列表
     var appInstance = getApp();
     // var t_foodList = appInstance.globalData.foodList;
@@ -116,17 +116,17 @@ Page({
   },
 
   //关闭食品详情弹窗
-  closeModal: function(e) {
+  closeModal: function (e) {
     this.setData({
       modalHidden: true
     })
   },
 
   //展示食品详情弹窗
-  imageClick:function(e){
+  imageClick: function (e) {
 
     var dataset = e.currentTarget.dataset;
-    
+
     var appInstance = getApp();
     var t_foodList = appInstance.globalData.foodList;
 
@@ -139,17 +139,17 @@ Page({
   },
 
   //提交订单
-  sublimitClick:function(e){
+  sublimitClick: function (e) {
 
     //订单列表 传参
     var agrs = JSON.stringify(this.data.orderList);
     wx.navigateTo({
-        url: '../order/order?order=' + agrs
+      url: '../order/order?order=' + agrs
     })
   },
 
   //加入到购物车
-  addCartClick:function(e){
+  addCartClick: function (e) {
     var dataset = e.currentTarget.dataset;
     this.changeNum(dataset.index, true);
 
@@ -159,7 +159,7 @@ Page({
 
     //1s后关闭
     var _this = this;
-    setTimeout(function(){
+    setTimeout(function () {
       _this.setData({
         toastHidden: true
       });
@@ -170,18 +170,18 @@ Page({
   },
 
   //增加数量
-  addClick:function(e){
+  addClick: function (e) {
     var dataset = e.currentTarget.dataset;
     this.changeNum(dataset.index, true);
   },
 
   //减少数量
-  reduceClick:function(e){
+  reduceClick: function (e) {
     var dataset = e.currentTarget.dataset;
     this.changeNum(dataset.index, false);
   },
 
-  changeNum:function(index, bool){
+  changeNum: function (index, bool) {
     var appInstance = getApp();
     var t_food = appInstance.globalData.foodList[index];
 
@@ -190,34 +190,34 @@ Page({
     var obj = orderList[t_food.id];
 
     //如果存在，则数量变化
-    if(obj){
-        if(bool){
-          obj.num = obj.num + 1;
-        }else{
-          if(obj.num > 0){
-            obj.num = obj.num - 1;
-          }else{
-            return;//已经减少为0
-          }
+    if (obj) {
+      if (bool) {
+        obj.num = obj.num + 1;
+      } else {
+        if (obj.num > 0) {
+          obj.num = obj.num - 1;
+        } else {
+          return;//已经减少为0
         }
-    }else{
-        if(bool){
-          //不存在，点击增加，则写入一条订单数据，数量默认1
-          obj = {
-            id: t_food.id,
-            num: 1,
-            cost: t_food.cost,
-            title: t_food.title
-          };
-          this.data.orderList[t_food.id] = obj;
-        }else{
-          return;//不存在，并且点击的是减少
-        }
+      }
+    } else {
+      if (bool) {
+        //不存在，点击增加，则写入一条订单数据，数量默认1
+        obj = {
+          id: t_food.id,
+          num: 1,
+          cost: t_food.cost,
+          title: t_food.title
+        };
+        this.data.orderList[t_food.id] = obj;
+      } else {
+        return;//不存在，并且点击的是减少
+      }
     }
-    
+
     var order_num = 0;
     var order_cost = 0;
-    for(var k in orderList){
+    for (var k in orderList) {
       order_num = orderList[k].num + order_num; //计算总数量
       order_cost = order_cost + orderList[k].cost * orderList[k].num; //计算总价格
     }
@@ -230,7 +230,7 @@ Page({
   },
 
   //食品类型
-  foodTypeChange: function(e) {
+  foodTypeChange: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       foodTypesIndex: e.detail.value
@@ -238,7 +238,7 @@ Page({
   },
 
   //排序类型
-  rankTypeChange: function(e) {
+  rankTypeChange: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       rankTypesIndex: e.detail.value
